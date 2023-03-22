@@ -11,6 +11,10 @@
 		F5AD62AE29C8A811004B2031 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD62AD29C8A811004B2031 /* ContentView.swift */; };
 		F5AD62B029C8A812004B2031 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5AD62AF29C8A812004B2031 /* Assets.xcassets */; };
 		F5AD62B329C8A812004B2031 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5AD62B229C8A812004B2031 /* Preview Assets.xcassets */; };
+		F5AD62BF29C8AA72004B2031 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD62BE29C8AA72004B2031 /* NetworkManager.swift */; };
+		F5AD62C129C8AC37004B2031 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD62C029C8AC37004B2031 /* PostData.swift */; };
+		F5AD62C429C8C4D1004B2031 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD62C329C8C4D1004B2031 /* DetailView.swift */; };
+		F5AD62C629C8C7C8004B2031 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD62C529C8C7C8004B2031 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		F5AD62AD29C8A811004B2031 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F5AD62AF29C8A812004B2031 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5AD62B229C8A812004B2031 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F5AD62BE29C8AA72004B2031 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		F5AD62C029C8AC37004B2031 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		F5AD62C329C8C4D1004B2031 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		F5AD62C529C8C7C8004B2031 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,7 @@
 		F5AD629F29C8A811004B2031 = {
 			isa = PBXGroup;
 			children = (
+				F5AD62BD29C8AA5A004B2031 /* Models */,
 				F5AD62AA29C8A811004B2031 /* HackerNews */,
 				F5AD62A929C8A811004B2031 /* Products */,
 			);
@@ -53,6 +62,8 @@
 			children = (
 				F5AD62AB29C8A811004B2031 /* HackerNewsApp.swift */,
 				F5AD62AD29C8A811004B2031 /* ContentView.swift */,
+				F5AD62C329C8C4D1004B2031 /* DetailView.swift */,
+				F5AD62C529C8C7C8004B2031 /* WebView.swift */,
 				F5AD62AF29C8A812004B2031 /* Assets.xcassets */,
 				F5AD62B129C8A812004B2031 /* Preview Content */,
 			);
@@ -65,6 +76,15 @@
 				F5AD62B229C8A812004B2031 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F5AD62BD29C8AA5A004B2031 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F5AD62BE29C8AA72004B2031 /* NetworkManager.swift */,
+				F5AD62C029C8AC37004B2031 /* PostData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5AD62C129C8AC37004B2031 /* PostData.swift in Sources */,
+				F5AD62BF29C8AA72004B2031 /* NetworkManager.swift in Sources */,
+				F5AD62C429C8C4D1004B2031 /* DetailView.swift in Sources */,
+				F5AD62C629C8C7C8004B2031 /* WebView.swift in Sources */,
 				F5AD62AE29C8A811004B2031 /* ContentView.swift in Sources */,
 				F5AD62AC29C8A811004B2031 /* HackerNewsApp.swift in Sources */,
 			);
@@ -270,7 +294,7 @@
 				DEVELOPMENT_TEAM = 5BDQ5WR29P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = HackerNews/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -299,7 +323,7 @@
 				DEVELOPMENT_TEAM = 5BDQ5WR29P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = HackerNews/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
